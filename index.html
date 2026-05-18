@@ -11,19 +11,19 @@
 
   <style>
     :root {
-      --snow: #fbfcfd;
-      --snow-soft: #f4f8fa;
-      --snow-blue: #edf5f8;
-      --ice: #dceaf0;
-      --ice-deep: #c8d9e1;
-      --frost: #9bb4c2;
-      --frost-deep: #6f8ca0;
-      --slate: #273642;
-      --slate-soft: #506575;
-      --mist: #718493;
-      --line: #cfdde4;
-      --line-soft: #e0e9ee;
-      --shadow: rgba(78, 99, 114, 0.14);
+      --snow: #f8fbfc;
+      --snow-soft: #edf4f7;
+      --snow-blue: #e2edf3;
+      --ice: #cddfe8;
+      --ice-deep: #b2c7d3;
+      --frost: #7899ad;
+      --frost-deep: #456b82;
+      --slate: #1f2f3a;
+      --slate-soft: #3e5667;
+      --mist: #5e7586;
+      --line: #b9cbd5;
+      --line-soft: #cedde5;
+      --shadow: rgba(53, 78, 93, 0.18);
       --radius-xl: 30px;
       --radius-lg: 22px;
       --radius-md: 15px;
@@ -37,7 +37,7 @@
 
     html {
       scroll-behavior: smooth;
-      background: #edf5f8;
+      background: #e2edf3;
     }
 
     body {
@@ -45,7 +45,7 @@
       color: var(--slate);
       font-family: "Noto Sans KR", sans-serif;
       background:
-        linear-gradient(180deg, #f8fbfc 0%, #edf5f8 28%, #e5eef3 100%);
+        linear-gradient(180deg, #f5f9fb 0%, #e2edf3 28%, #d5e3eb 100%);
       overflow-x: hidden;
     }
 
@@ -66,7 +66,7 @@
       border: 1px solid var(--line-soft);
       border-radius: 34px;
       background:
-        linear-gradient(145deg, #ffffff 0%, #f2f8fa 46%, #dfecef 100%);
+        linear-gradient(145deg, #ffffff 0%, #edf5f8 46%, #cbdde6 100%);
       box-shadow: 0 30px 80px var(--shadow);
     }
 
@@ -76,7 +76,7 @@
       inset: 0;
       background:
         radial-gradient(circle at 18% 10%, #ffffff 0%, rgba(255,255,255,0) 34%),
-        radial-gradient(circle at 88% 18%, #d9e8ee 0%, rgba(217,232,238,0) 34%);
+        radial-gradient(circle at 88% 18%, #c7dce5 0%, rgba(199,220,229,0) 34%);
       pointer-events: none;
     }
 
@@ -85,7 +85,7 @@
       position: absolute;
       right: -18px;
       bottom: -22px;
-      color: rgba(80, 101, 117, 0.09);
+      color: rgba(31, 47, 58, 0.12);
       font-family: "Cinzel", serif;
       font-size: clamp(66px, 17vw, 176px);
       font-weight: 700;
@@ -127,7 +127,7 @@
 
     h1 {
       margin-top: 16px;
-      color: #23323e;
+      color: #1e303d;
       font-family: "Cinzel", "Noto Serif KR", serif;
       font-size: clamp(64px, 17vw, 136px);
       line-height: 0.86;
@@ -150,14 +150,14 @@
       padding: 22px 24px;
       border-left: 4px solid var(--frost);
       border-radius: 0 20px 20px 0;
-      background: #ffffff;
+      background: #f8fbfc;
       color: var(--slate);
       font-family: "Noto Serif KR", serif;
       font-size: clamp(18px, 4vw, 24px);
       line-height: 1.75;
       letter-spacing: -0.045em;
       font-weight: 600;
-      box-shadow: 0 14px 38px rgba(91, 116, 132, 0.12);
+      box-shadow: 0 14px 38px rgba(53, 78, 93, 0.16);
     }
 
     .section {
@@ -165,18 +165,18 @@
       padding: clamp(24px, 5vw, 40px);
       border: 1px solid var(--line);
       border-radius: var(--radius-xl);
-      background: #ffffff;
-      box-shadow: 0 18px 54px rgba(78, 99, 114, 0.09);
+      background: #fdfefe;
+      box-shadow: 0 18px 54px rgba(53, 78, 93, 0.11);
     }
 
     .section.ice-section {
-      background: #f4f8fa;
+      background: #eaf3f7;
     }
 
     .section-head {
       margin-bottom: 24px;
       padding-bottom: 18px;
-      border-bottom: 1px solid var(--line-soft);
+      border-bottom: 1px solid var(--line);
     }
 
     .section-kicker {
@@ -190,7 +190,7 @@
     }
 
     h2 {
-      color: #23323e;
+      color: #1e303d;
       font-family: "Noto Serif KR", serif;
       font-size: clamp(34px, 7vw, 52px);
       line-height: 1.12;
@@ -223,7 +223,7 @@
     .info-card {
       padding: 24px;
       border-radius: var(--radius-lg);
-      background: linear-gradient(180deg, #ffffff 0%, #f5f9fb 100%);
+      background: linear-gradient(180deg, #ffffff 0%, #eaf3f7 100%);
     }
 
     .info-card h3 {
@@ -244,7 +244,7 @@
     .world-row {
       padding: 18px 20px;
       border-radius: var(--radius-md);
-      background: #f8fbfc;
+      background: #f1f7fa;
     }
 
     .world-row strong {
@@ -272,15 +272,15 @@
     }
 
     .place-card.lodge {
-      background: #f9fbfc;
+      background: #f3f8fa;
     }
 
     .place-card.forest {
-      background: #edf5f8;
+      background: #e1edf3;
     }
 
     .place-card.town {
-      background: #f2f6f8;
+      background: #e8f1f5;
     }
 
     .place-card::after {
@@ -291,8 +291,8 @@
       width: 230px;
       height: 230px;
       border-radius: 50%;
-      background: #dceaf0;
-      opacity: 0.7;
+      background: #cddfe8;
+      opacity: 0.85;
       pointer-events: none;
     }
 
@@ -364,7 +364,7 @@
       border: 1px solid var(--line);
       border-radius: var(--radius-xl);
       background: #ffffff;
-      box-shadow: 0 24px 64px rgba(78, 99, 114, 0.14);
+      box-shadow: 0 24px 64px rgba(53, 78, 93, 0.16);
     }
 
     .portrait-frame,
@@ -386,7 +386,7 @@
 
     .portrait-info {
       padding: 24px;
-      background: linear-gradient(180deg, #ffffff 0%, #f4f8fa 100%);
+      background: linear-gradient(180deg, #ffffff 0%, #eaf3f7 100%);
     }
 
     .portrait-info h3 {
@@ -405,8 +405,7 @@
     }
 
     .tag-row,
-    .dog-keywords,
-    .affection-tags {
+    .dog-keywords {
       display: flex;
       flex-wrap: wrap;
       gap: 8px;
@@ -415,14 +414,13 @@
     }
 
     .tag,
-    .dog-keywords li,
-    .affection-tags li {
+    .dog-keywords li {
       display: inline-flex;
       width: auto;
       padding: 9px 13px;
       border: 1px solid var(--line);
       border-radius: 999px;
-      background: #edf5f8;
+      background: #dfeaf0;
       color: var(--slate);
       font-size: clamp(14px, 3vw, 18px);
       font-weight: 800;
@@ -442,7 +440,7 @@
     }
 
     .profile-box.cold {
-      background: #edf5f8;
+      background: #dfeaf0;
     }
 
     .profile-box h3 {
@@ -486,7 +484,7 @@
       padding: 17px 18px;
       border: 1px solid var(--line);
       border-radius: 16px;
-      background: #fbfcfd;
+      background: #f8fbfc;
     }
 
     .profile-box.cold .info-item,
@@ -541,7 +539,7 @@
     }
 
     .affection-card {
-      background: linear-gradient(180deg, #ffffff 0%, #f5f9fb 100%);
+      background: linear-gradient(180deg, #ffffff 0%, #edf5f8 100%);
     }
 
     .affection-lead {
@@ -596,8 +594,8 @@
       padding: clamp(26px, 6vw, 50px);
       border-radius: var(--radius-xl);
       background:
-        linear-gradient(180deg, #ffffff 0%, #edf5f8 100%);
-      box-shadow: 0 18px 54px rgba(78, 99, 114, 0.09);
+        linear-gradient(180deg, #ffffff 0%, #dfeaf0 100%);
+      box-shadow: 0 18px 54px rgba(53, 78, 93, 0.13);
     }
 
     .story-box::before {
@@ -605,7 +603,7 @@
       position: absolute;
       right: -14px;
       bottom: -20px;
-      color: rgba(80, 101, 117, 0.09);
+      color: rgba(31, 47, 58, 0.11);
       font-family: "Cinzel", serif;
       font-size: clamp(62px, 13vw, 150px);
       font-weight: 700;
@@ -916,7 +914,7 @@
               <span>
                 그는 마음을 설명하기보다 같은 자리에 남는다.
                 위험한 길에서는 먼저 발을 디디고, 낯선 소리가 들리면 자연스럽게 앞에 선다.
-                의지하라고 말하지는 않지만, 어느 순간부터 당신은 그가 있는 방향을 먼저 확인하게 될 것이다.
+                의지하라고 말하지는 않지만, 어느 순간부터 유저는 그가 있는 방향을 먼저 확인하게 된다.
               </span>
             </div>
 
@@ -925,10 +923,13 @@
               <span>
                 이든은 쉽게 가까워지지도, 쉽게 떠나지도 않는다.
                 손을 내밀지 않은 채 문을 열어두고, 붙잡지 않는 척하면서 돌아올 자리를 남겨둔다.
-                그 무뚝뚝한 배려가 단순한 책임인지, 아니면 오래 눌러둔 마음인지 확인하는 일은 온전히 당신의 몫이다.
+                그 무뚝뚝한 배려가 단순한 책임인지, 아니면 오래 눌러둔 마음인지 확인하는 일은 산장에 머문 유저의 몫이다.
               </span>
             </div>
           </div>
+        </article>
+      </div>
+    </section>
 
     <section class="section" id="barney">
       <div class="section-head">
