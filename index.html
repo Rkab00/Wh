@@ -11,19 +11,20 @@
 
   <style>
     :root {
-      --snow: #f8fbfc;
-      --snow-soft: #edf4f7;
-      --snow-blue: #e2edf3;
-      --ice: #cddfe8;
-      --ice-deep: #b2c7d3;
-      --frost: #7899ad;
-      --frost-deep: #456b82;
-      --slate: #1f2f3a;
-      --slate-soft: #3e5667;
-      --mist: #5e7586;
-      --line: #b9cbd5;
-      --line-soft: #cedde5;
-      --shadow: rgba(53, 78, 93, 0.18);
+      --snow: #f7fbfc;
+      --snow-strong: #ffffff;
+      --snow-soft: #eef6f9;
+      --snow-blue: #dceaf1;
+      --ice: #c9dde7;
+      --ice-deep: #acc5d2;
+      --frost: #6f91a6;
+      --frost-deep: #315a74;
+      --slate: #172632;
+      --slate-soft: #334d60;
+      --mist: #526f82;
+      --line: #afc5d1;
+      --line-soft: #c7d8e1;
+      --shadow: #c8d8e1;
       --radius-xl: 30px;
       --radius-lg: 22px;
       --radius-md: 15px;
@@ -37,16 +38,32 @@
 
     html {
       scroll-behavior: smooth;
-      background: #e2edf3;
+      background: #dceaf1;
     }
 
     body {
       min-height: 100vh;
       color: var(--slate);
       font-family: "Noto Sans KR", sans-serif;
-      background:
-        linear-gradient(180deg, #f5f9fb 0%, #e2edf3 28%, #d5e3eb 100%);
+      background: #dceaf1;
       overflow-x: hidden;
+    }
+
+    p,
+    span,
+    li,
+    b,
+    strong,
+    h2,
+    h3,
+    h4,
+    .hero-subtitle,
+    .hero-quote,
+    .section-desc,
+    .affection-lead {
+      word-break: keep-all;
+      overflow-wrap: break-word;
+      line-break: strict;
     }
 
     img {
@@ -65,18 +82,19 @@
       padding: clamp(36px, 8vw, 78px);
       border: 1px solid var(--line-soft);
       border-radius: 34px;
-      background:
-        linear-gradient(145deg, #ffffff 0%, #edf5f8 46%, #cbdde6 100%);
+      background: #edf6fa;
       box-shadow: 0 30px 80px var(--shadow);
     }
 
     .hero::before {
       content: "";
       position: absolute;
-      inset: 0;
-      background:
-        radial-gradient(circle at 18% 10%, #ffffff 0%, rgba(255,255,255,0) 34%),
-        radial-gradient(circle at 88% 18%, #c7dce5 0%, rgba(199,220,229,0) 34%);
+      left: -18%;
+      top: -18%;
+      width: 78%;
+      height: 68%;
+      border-radius: 50%;
+      background: #ffffff;
       pointer-events: none;
     }
 
@@ -85,7 +103,7 @@
       position: absolute;
       right: -18px;
       bottom: -22px;
-      color: rgba(31, 47, 58, 0.12);
+      color: #cbdce5;
       font-family: "Cinzel", serif;
       font-size: clamp(66px, 17vw, 176px);
       font-weight: 700;
@@ -115,23 +133,26 @@
       font-weight: 800;
       letter-spacing: 0.12em;
       text-transform: uppercase;
+      word-break: normal;
     }
 
     .eyebrow::before {
       content: "";
       width: 8px;
       height: 8px;
+      flex: 0 0 auto;
       border-radius: 50%;
       background: var(--frost);
     }
 
     h1 {
       margin-top: 16px;
-      color: #1e303d;
+      color: #142532;
       font-family: "Cinzel", "Noto Serif KR", serif;
       font-size: clamp(64px, 17vw, 136px);
       line-height: 0.86;
       letter-spacing: -0.065em;
+      word-break: normal;
     }
 
     .hero-subtitle {
@@ -150,14 +171,14 @@
       padding: 22px 24px;
       border-left: 4px solid var(--frost);
       border-radius: 0 20px 20px 0;
-      background: #f8fbfc;
+      background: #ffffff;
       color: var(--slate);
       font-family: "Noto Serif KR", serif;
       font-size: clamp(18px, 4vw, 24px);
       line-height: 1.75;
       letter-spacing: -0.045em;
       font-weight: 600;
-      box-shadow: 0 14px 38px rgba(53, 78, 93, 0.16);
+      box-shadow: 0 14px 38px #d2e0e7;
     }
 
     .section {
@@ -165,12 +186,12 @@
       padding: clamp(24px, 5vw, 40px);
       border: 1px solid var(--line);
       border-radius: var(--radius-xl);
-      background: #fdfefe;
-      box-shadow: 0 18px 54px rgba(53, 78, 93, 0.11);
+      background: #f9fcfd;
+      box-shadow: 0 18px 54px #cbdbe4;
     }
 
     .section.ice-section {
-      background: #eaf3f7;
+      background: #e9f3f7;
     }
 
     .section-head {
@@ -187,10 +208,11 @@
       font-weight: 900;
       letter-spacing: 0.16em;
       text-transform: uppercase;
+      word-break: normal;
     }
 
     h2 {
-      color: #1e303d;
+      color: #142532;
       font-family: "Noto Serif KR", serif;
       font-size: clamp(34px, 7vw, 52px);
       line-height: 1.12;
@@ -223,7 +245,7 @@
     .info-card {
       padding: 24px;
       border-radius: var(--radius-lg);
-      background: linear-gradient(180deg, #ffffff 0%, #eaf3f7 100%);
+      background: #f4f9fb;
     }
 
     .info-card h3 {
@@ -244,7 +266,7 @@
     .world-row {
       padding: 18px 20px;
       border-radius: var(--radius-md);
-      background: #f1f7fa;
+      background: #eef6f9;
     }
 
     .world-row strong {
@@ -272,15 +294,15 @@
     }
 
     .place-card.lodge {
-      background: #f3f8fa;
+      background: #f4f9fb;
     }
 
     .place-card.forest {
-      background: #e1edf3;
+      background: #deebf1;
     }
 
     .place-card.town {
-      background: #e8f1f5;
+      background: #e7f1f5;
     }
 
     .place-card::after {
@@ -291,8 +313,7 @@
       width: 230px;
       height: 230px;
       border-radius: 50%;
-      background: #cddfe8;
-      opacity: 0.85;
+      background: #c9dde7;
       pointer-events: none;
     }
 
@@ -306,6 +327,7 @@
       font-size: clamp(15px, 3vw, 18px);
       font-weight: 700;
       letter-spacing: 0.14em;
+      word-break: normal;
     }
 
     .place-card h3 {
@@ -364,7 +386,7 @@
       border: 1px solid var(--line);
       border-radius: var(--radius-xl);
       background: #ffffff;
-      box-shadow: 0 24px 64px rgba(53, 78, 93, 0.16);
+      box-shadow: 0 24px 64px #c5d7e1;
     }
 
     .portrait-frame,
@@ -386,7 +408,7 @@
 
     .portrait-info {
       padding: 24px;
-      background: linear-gradient(180deg, #ffffff 0%, #eaf3f7 100%);
+      background: #eef6f9;
     }
 
     .portrait-info h3 {
@@ -420,11 +442,12 @@
       padding: 9px 13px;
       border: 1px solid var(--line);
       border-radius: 999px;
-      background: #dfeaf0;
+      background: #d7e6ee;
       color: var(--slate);
       font-size: clamp(14px, 3vw, 18px);
       font-weight: 800;
       letter-spacing: -0.035em;
+      word-break: keep-all;
     }
 
     .profile-stack {
@@ -440,7 +463,7 @@
     }
 
     .profile-box.cold {
-      background: #dfeaf0;
+      background: #dbeaf1;
     }
 
     .profile-box h3 {
@@ -484,7 +507,7 @@
       padding: 17px 18px;
       border: 1px solid var(--line);
       border-radius: 16px;
-      background: #f8fbfc;
+      background: #f4f9fb;
     }
 
     .profile-box.cold .info-item,
@@ -500,6 +523,7 @@
       font-size: clamp(14px, 3vw, 18px);
       font-weight: 900;
       letter-spacing: 0.08em;
+      word-break: normal;
     }
 
     .info-item b {
@@ -539,7 +563,7 @@
     }
 
     .affection-card {
-      background: linear-gradient(180deg, #ffffff 0%, #edf5f8 100%);
+      background: #f0f7fa;
     }
 
     .affection-lead {
@@ -593,9 +617,8 @@
       overflow: hidden;
       padding: clamp(26px, 6vw, 50px);
       border-radius: var(--radius-xl);
-      background:
-        linear-gradient(180deg, #ffffff 0%, #dfeaf0 100%);
-      box-shadow: 0 18px 54px rgba(53, 78, 93, 0.13);
+      background: #dceaf1;
+      box-shadow: 0 18px 54px #c1d4df;
     }
 
     .story-box::before {
@@ -603,7 +626,7 @@
       position: absolute;
       right: -14px;
       bottom: -20px;
-      color: rgba(31, 47, 58, 0.11);
+      color: #c1d4df;
       font-family: "Cinzel", serif;
       font-size: clamp(62px, 13vw, 150px);
       font-weight: 700;
@@ -680,7 +703,7 @@
           <span class="eyebrow">Snowbound Romance · Survival · 2007</span>
           <h1>WHITE<br>OUT</h1>
           <p class="hero-subtitle">
-            길도 발자국도 사라진 백색의 설원.  
+            길도 발자국도 사라진 백색의 설원.
             살아남기 위해 들어선 오래된 산장에는, 말보다 장작을 먼저 얹는 남자와 사람의 체온을 믿는 거대한 개가 있다.
           </p>
         </div>
