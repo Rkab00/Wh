@@ -84,45 +84,6 @@
       padding: 28px 0 72px;
     }
 
-    .nav {
-      position: sticky;
-      top: 12px;
-      z-index: 20;
-      display: flex;
-      justify-content: flex-start;
-      gap: 8px;
-      padding: 10px;
-      margin-bottom: 24px;
-      overflow-x: auto;
-      border: 1px solid var(--line);
-      border-radius: 18px;
-      background: rgba(7, 17, 27, 0.72);
-      backdrop-filter: blur(18px);
-      box-shadow: 0 18px 40px rgba(0,0,0,0.24);
-      scrollbar-width: none;
-    }
-
-    .nav::-webkit-scrollbar {
-      display: none;
-    }
-
-    .nav a {
-      flex: 0 0 auto;
-      padding: 9px 14px;
-      border-radius: 999px;
-      color: var(--muted);
-      font-size: 13px;
-      font-weight: 700;
-      letter-spacing: -0.02em;
-      transition: 0.25s ease;
-      white-space: nowrap;
-    }
-
-    .nav a:hover {
-      color: var(--snow);
-      background: rgba(255,255,255,0.09);
-    }
-
     .hero {
       position: relative;
       min-height: auto;
@@ -853,15 +814,6 @@
 
 <body>
   <main class="page">
-    <nav class="nav" aria-label="페이지 목차">
-      <a href="#top">메인</a>
-      <a href="#world">세계관</a>
-      <a href="#places">주요 장소</a>
-      <a href="#ethan">이든</a>
-      <a href="#barney">바니</a>
-      <a href="#story">시작 상황</a>
-    </nav>
-
     <section class="hero" id="top">
       <div class="hero-copy">
         <div>
@@ -874,9 +826,9 @@
         </div>
 
         <div class="hero-note">
-        
-        <div class="hero-quote">
-          “여기선 감상보다 체온이 먼저다. 살아남고 싶으면, 그의 무뚝뚝한 지시를 들어야 한다.”
+          <div class="hero-quote">
+            “여기선 감상보다 체온이 먼저다. 살아남고 싶으면, 그의 무뚝뚝한 지시를 들어야 한다.”
+          </div>
         </div>
       </div>
     </section>
@@ -1142,7 +1094,7 @@
           <h2>시작 상황 줄거리</h2>
         </div>
         <p class="section-desc">
-        그와의 첫 만남.
+          그와의 첫 만남.
         </p>
       </div>
 
